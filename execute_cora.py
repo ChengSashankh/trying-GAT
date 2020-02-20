@@ -33,7 +33,7 @@ print('residual: ' + str(residual))
 print('nonlinearity: ' + str(nonlinearity))
 print('model: ' + str(model))
 
-adj, features, y_train, y_val, y_test, train_mask, val_mask, test_mask = process.load_data(dataset)
+adj, features, y_train, y_val, y_test, train_mask, val_mask, test_mask = process.load_data_custom()
 features, spars = process.preprocess_features(features)
 
 nb_nodes = features.shape[0]
