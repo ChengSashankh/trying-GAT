@@ -54,7 +54,7 @@ def load_data_custom():
         open('/Users/cksash/data/fyp/kdd/node_vectors_joined.pkl', 'rb')
     )
 
-    features = sp.csr_matrix(features)
+    # features = sp.csr_matrix(features)
 
     adj_mat = pkl.load(
         open('/Users/cksash/data/fyp/kdd/joined_adjmatrix.pkl', 'rb')
